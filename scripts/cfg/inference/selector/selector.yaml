@@ -1,0 +1,13 @@
+# Selector Inference Configuration
+# Use this template to create your selector inference configuration
+
+verifier: null # not used for selector-only inference
+analyzer: null # not used for selector-only inference
+analyze_path: null # not used for selector-only inference
+selector: # selector yaml path (e.g., scripts/cfg/train/selector_llama.yaml)
+selector_path: null # not used for selector-only inference
+dataset_config:
+  dataset_split: test # train, val, test
+  dataset_info: gold # gold, ret
+save_result_path: result # where to save inference results
+

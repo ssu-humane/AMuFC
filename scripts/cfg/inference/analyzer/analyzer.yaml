@@ -1,0 +1,13 @@
+# Analyzer Inference Configuration
+# Use this template to create your analyzer inference configuration
+
+verifier: null # not used for analyzer-only inference
+analyzer: # analyzer yaml path (e.g., scripts/cfg/train/analyzer_llama.yaml)
+analyze_path: null # not used for analyzer-only inference
+selector: null # not used for analyzer-only inference
+selector_path: null # not used for analyzer-only inference
+dataset_config:
+  dataset_split: test # train, val, test
+  dataset_info: gold # gold, ret
+save_result_path: result # where to save inference results
+

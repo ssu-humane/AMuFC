@@ -1,0 +1,14 @@
+# Zero-Shot Inference Configuration
+# Use this template to create your zero-shot inference configuration
+
+model_path: # model name/path (e.g., gemini-2.5-pro, gpt-4o)
+task_name: # task type (e.g., multimodal, text, analysis)
+max_workers: 4 # number of parallel workers for API calls
+
+dataset_config:
+  dataset_split: test # train, val, test
+  dataset_info: gold # gold, ret
+
+save_path: # path to save inference results
+index: # starting index for processing (optional)
+

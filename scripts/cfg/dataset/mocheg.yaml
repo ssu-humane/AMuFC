@@ -1,0 +1,9 @@
+train_verifier_datapath: Corpus2_for_vlm_single_image.json
+train_analyzer_datapath: analyze.json # or analyze-short for train label only
+train_selector_datapath: Corpus2_for_vlm_gpt4o_aftercheck_refined.json
+
+val_gold_datapath: Corpus2_for_vlm_single_image.json
+val_ret_datapath: null
+
+test_gold_datapath: Corpus2_for_vlm_single_image.json
+test_ret_datapath: Corpus2_for_vlm_imgret_top1_txtret_top5.json

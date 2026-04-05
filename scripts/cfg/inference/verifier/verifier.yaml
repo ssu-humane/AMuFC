@@ -1,0 +1,13 @@
+# Verifier Inference Configuration
+# Use this template to create your verifier inference configuration
+
+verifier: # verifier yaml path (e.g., scripts/cfg/train/verifier_qwen.yaml)
+analyzer: # analyzer yaml path (e.g., scripts/cfg/train/analyzer_llama.yaml) or null
+analyze_path: # path to pre-computed analysis results or null
+selector: # selector yaml path (e.g., scripts/cfg/train/selector_llama.yaml) or null
+selector_path: # path to pre-computed selection results or null
+dataset_config:
+  dataset_split: test # train, val, test
+  dataset_info: gold # gold, ret
+save_result_path: result # where to save inference results
+

@@ -1,0 +1,12 @@
+# Text Retrieval Configuration
+# Use this template to configure text evidence retrieval
+
+model_name: # model path for bi-encoder or method name (bm25, tfidf)
+
+dataset_path: # path to input dataset json
+evidence_csv: # path to evidence corpus csv file
+
+top_k: 5 # number of top results to retrieve
+
+output_path: # path to save retrieval results json
+

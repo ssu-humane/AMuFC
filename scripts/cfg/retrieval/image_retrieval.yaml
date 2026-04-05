@@ -1,0 +1,13 @@
+# Image Retrieval Configuration
+# Use this template to configure image evidence retrieval
+
+model_name: # path to image retrieval model checkpoint
+image_dir: # directory containing image files
+
+dataset_path: # path to input dataset json
+
+output_path_top1: # path to save top-1 retrieval results json
+output_path_topk: # path to save top-k retrieval results json
+
+top_k: 5 # number of top results to retrieve
+

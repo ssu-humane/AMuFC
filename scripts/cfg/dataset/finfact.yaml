@@ -1,0 +1,9 @@
+train_verifier_datapath: null
+train_analyzer_datapath: null
+train_selector_datapath: null
+
+val_gold_datapath: null
+val_ret_datapath: null
+
+test_gold_datapath: null
+test_ret_datapath: finfact_top1_refined_final_imgret_top1_txtret_top5.json

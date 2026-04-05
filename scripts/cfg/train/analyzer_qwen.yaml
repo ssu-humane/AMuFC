@@ -1,0 +1,35 @@
+prompt: "Your task is to determine whether the provided image evidence is necessary for verifying the given claim or clarifying the accompanying text evidence. Follow these steps:\n1. Analyze the claim and the text evidence to understand the context.\n2. Assess whether the image provides important information that is not already conveyed by the text.\n3. Decide whether the image is necessary for verification and justify your reasoning.\nRespond only with your analysis."
+
+model_id: "Qwen/Qwen2-VL-7B-Instruct"
+save_path: checkpoints/analyzer_qwenvl2
+
+verifier: false
+analyzer: true
+selector: false
+
+peft_config:
+  lora_alpha: 256
+  lora_dropout: 0.05
+  r: 128
+  bias: "none"
+  target_modules: ["q_proj", "v_proj"]
+  task_type: "CAUSAL_LM"
+
+bnb_config:
+  load_in_4bit: true
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_compute_dtype: "bfloat16"
+
+deepspeed_conf: 'scripts/cfg/deepspeed/zero1.json'
+epochs: 2
+batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 2e-5
+warmup_ratio: 0.03
+max_seq_length: 6144
+dataset_text_field: ""
+dataset_kwargs:
+  skip_prepare_dataset: true
+dataloader_num_workers: 4
+seed: 42

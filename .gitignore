@@ -1,0 +1,9 @@
+.env
+.vscode
+
+/etc
+/logs
+/wandb
+/result*
+
+__pycache__
