@@ -4,7 +4,7 @@
 
 Official code for *"Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity"*.
 
-AMuFC is a multimodal fact-checking framework that adaptively uses visual evidence through two collaborating VLM agents: an **Analyzer** that assesses whether visual evidence is necessary for a claim, and a **Verifier** that predicts veracity conditioned on the Analyzer's assessment.
+AMuFC is a multimodal fact-checking framework that adaptively uses visual evidence through two collaborating vision-language models: an **Analyzer** that assesses whether visual evidence is necessary for a claim, and a **Verifier** that predicts veracity conditioned on the Analyzer's assessment.
 
 ## Setup
 
