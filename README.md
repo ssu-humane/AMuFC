@@ -1,8 +1,11 @@
-# AMuFC
+# Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity
+
+[![arXiv](https://img.shields.io/badge/arXiv-2604.04692-b31b1b.svg)](https://arxiv.org/abs/2604.04692)
+[![Hugging Face Dataset](https://img.shields.io/badge/Hugging%20Face-WebFC-FFD21E?logo=huggingface)](https://huggingface.co/datasets/humane-lab/WebFC)
 
 **A**daptive **Mu**ltimodal **F**act-**C**hecking with Visual Evidence Necessity
 
-Official code for *"Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity"*.
+Official implementation of the [AACL-IJCNLP 2026 paper](https://aclanthology.org/2026.aacl-long.166/) by Jaeyoon Jung, Yejun Yoon, and Kunwoo Park.
 
 AMuFC is a multimodal fact-checking framework that adaptively uses visual evidence through two collaborating vision-language models: an **Analyzer** that assesses whether visual evidence is necessary for a claim, and a **Verifier** that predicts veracity conditioned on the Analyzer's assessment.
 
@@ -61,7 +64,7 @@ We use **MOCHEG** for training and evaluate on **MOCHEG**, **FinFact**, and **We
 |---------|-------|-------------|
 | [MOCHEG](datasets/mocheg/README.md) | Train + Test | Multimodal claim verification with text and image evidence |
 | [FinFact](datasets/finfact/README.md) | Test | Financial fact-checking with mixed text/image claims |
-| [WebFC](datasets/webfc/README.md) | Test | Web-based fact-checking dataset |
+| [WebFC](datasets/webfc/README.md) | Test | 621 PolitiFact claims from January 2024 through September 2025 with retrieved text and image evidence ([Hugging Face](https://huggingface.co/datasets/humane-lab/WebFC)) |
 
 See each dataset's README for preprocessing instructions.
 
@@ -240,3 +243,22 @@ python evaluation/caculate_verification_oracle.py \
 ## Results
 
 Results are saved to: `result/{dataset}/{split}/{info}/{module}/`
+
+## Citation
+
+```bibtex
+@inproceedings{jung-etal-2026-picture,
+    title = "Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity",
+    author = "Jung, Jaeyoon and Yoon, Yejun and Park, Kunwoo",
+    editor = "Zhang, Yue and Xu, Ruifeng and Purwarianti, Ayu and Rong, Tong and Suzuki, Jun",
+    booktitle = "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the {A}sia-Pacific Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = nov,
+    year = "2026",
+    address = "Hengqin, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.aacl-long.166/",
+    doi = "10.18653/2026.aacl-long.166",
+    pages = "3669--3687",
+    ISBN = "979-8-89176-439-2"
+}
+```

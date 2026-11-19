@@ -6,4 +6,4 @@ val_gold_datapath: null
 val_ret_datapath: null
 
 test_gold_datapath: null
-test_ret_datapath: webfc-summary-pre.json
+test_ret_datapath: webfc.json
