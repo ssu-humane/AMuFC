@@ -3,11 +3,13 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2604.04692-b31b1b.svg)](https://arxiv.org/abs/2604.04692)
 [![Hugging Face Dataset](https://img.shields.io/badge/Hugging%20Face-WebFC-FFD21E?logo=huggingface)](https://huggingface.co/datasets/humane-lab/WebFC)
 
-**A**daptive **Mu**ltimodal **F**act-**C**hecking with Visual Evidence Necessity
+![A cattle-farm claim with text and image evidence, illustrating the Analyzer’s visual evidence necessity assessment](figure/visual-evidence-necessity-example.png)
 
 Official implementation of the [AACL-IJCNLP 2026 paper](https://aclanthology.org/2026.aacl-long.166/) by Jaeyoon Jung, Yejun Yoon, and Kunwoo Park.
 
-AMuFC is a multimodal fact-checking framework that adaptively uses visual evidence through two collaborating vision-language models: an **Analyzer** that assesses whether visual evidence is necessary for a claim, and a **Verifier** that predicts veracity conditioned on the Analyzer's assessment.
+**AMuFC** (**A**daptive **Mu**ltimodal **F**act-**C**hecking) is a framework that adaptively uses visual evidence through two collaborating vision-language models: an **Analyzer** that assesses whether visual evidence is necessary for a claim, and a **Verifier** that predicts veracity conditioned on the Analyzer's assessment.
+
+![AMuFC workflow from evidence retrieval to Analyzer assessment and the Verifier verdict](figure/amufc-overview.png)
 
 ## Setup
 
